@@ -43,6 +43,17 @@ public class ExemploAluno {
         System.out.println("turma: " + estudante2.turma);
         System.out.println("Nome do Curso: " + estudante2.nomeCurso);
 
+        Aluno estudante3 = new Aluno();
+
+        estudante3.id = 223;
+        estudante3.nome="Janderson";
+        estudante3.nomeCurso="Psicologia";
+        estudante3.valorMensalidade= 1200;
+
+        System.out.println("---------------------------------------");
+
+        System.out.println("Id do estudante é: " + estudante3.id);
+        System.out.println("Nome do estudante é: " + estudante3.nome);
 
 
     }

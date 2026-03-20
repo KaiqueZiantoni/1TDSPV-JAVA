@@ -2,10 +2,10 @@ package br.com.fiap.loja.loja.model;
 
 public class Produto {
 
-    double preco;
-    int quantidade;
-    String nome;
-    boolean garantia;
+    public double preco;
+    public int quantidade;
+    public String nome;
+    public boolean garantia;
 
 
 }
