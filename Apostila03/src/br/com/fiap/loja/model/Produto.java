@@ -1,4 +1,4 @@
-package br.com.fiap.loja.loja.model;
+package br.com.fiap.loja.model;
 
 public class Produto {
 
@@ -6,6 +6,5 @@ public class Produto {
     public int quantidade;
     public String nome;
     public boolean garantia;
-
-
+    public Categoria categoria;
 }
