@@ -10,7 +10,7 @@ public class Terminal {
         Scanner item1 = new Scanner(System.in);
 
         System.out.println("Qual o nome do Produto? ");
-        String nome = item1.next() +  item1.nextLine();
+        String nome = item1.next() + item1.nextLine();
 
         System.out.println("Qual o preço do produto? ");
         double valor = item1.nextDouble();
@@ -19,7 +19,7 @@ public class Terminal {
         int quantidade = item1.nextInt();
 
         System.out.println("Produto tem garantia? ");
-        boolean garantia= item1.nextBoolean();
+        boolean garantia = item1.nextBoolean();
 
         //-----------------------------------------------------------------------------
         System.out.println("Qual a categoria do produto? ");
@@ -31,7 +31,7 @@ public class Terminal {
 
         Produto item = new Produto();
         item.nome = nome;
-        item.preco= valor;
+        item.preco = valor;
         item.quantidade = quantidade;
         item.garantia = garantia;
 
@@ -48,5 +48,22 @@ public class Terminal {
         System.out.println("Tem garantia? " + item.garantia);
         System.out.println("Categoria: " + info.nome);
         System.out.println("Descrição do produto: " + info.descricao);
+
+
+        double desconto = item.calcularDesconto();
+        System.out.println("Valor promocional: R$" + desconto);
+
+
+        System.out.println("Digite o valor do produto: ");
+        double precoNovo = item1.nextDouble();
+
+        item.alterarPreco(precoNovo);
+        System.out.println("Novo preço: " + item.preco);
+
+
+        System.out.println("quantos deseja comprar?: ");
+        int qtd = item1.nextInt();
+        double valorFinal = item.calcularDescontoQuantidade(qtd);
+        System.out.println("Com a quantidade " + valorFinal);
     }
 }
