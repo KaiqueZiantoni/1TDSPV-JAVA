@@ -1,13 +1,17 @@
 package br.com.fiap.exercicios.model;
 
 public class Cor {
-    String nome;
+    private String nome;
     private int r;
     private int g;
     private int b;
 
 
-    public void alterarCor(){
+    public void alterarCor(int r, int g, int b, String nome){
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.nome = nome;
     }
 
     public String getNome() {
@@ -41,4 +45,6 @@ public class Cor {
     public void setB(int b) {
         this.b = b;
     }
+
+
 }
