@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="7709AE20-E206-87C8-CDD5-F31653E50A60" mainViewID="F9717217-B22A-338C-3CB9-3BC7A2BD0CBE">
+<createdBy>kaique</createdBy>
+<createdTime>2026-05-13 21:48:00 UTC</createdTime>
+<ownerDesignName>Banco-de-dados-CP2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

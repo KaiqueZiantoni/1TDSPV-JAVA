@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Banco-de-dados-CP2" id="33460B69-4688-0608-F82F-0E002A9B98AE" version="3.5">
+<createdBy>kaique</createdBy>
+<createdTime>2026-05-13 21:48:00 UTC</createdTime>
+<ownerDesignName>Banco-de-dados-CP2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>33460B69-4688-0608-F82F-0E002A9B98AE</designId>
+</OSDM_Design>
