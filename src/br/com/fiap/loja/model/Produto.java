@@ -11,6 +11,39 @@ public class Produto {
         this.nome = nome;
     }
 
+
+    public Produto(String nome, Double preco){
+        this.nome = nome;
+        this.preco=preco;
+    }
+
+    //Retorna preço do produto com desconto
+    public double calcularDesconto(int porcentagem){
+        return preco - (preco * porcentagem / 100) ;
+    }
+
+    //Retornar o preço do desconto de acordo com cupom
+    //Fiap15 - 15% de desconto
+    //Fiap30 - 30% de desconto
+
+    public double calcularDesconto(String cupom) {
+        double valorCupom = 0;
+        if (cupom.equals("Fiap15")){
+            valorCupom = preco- 15/100*preco;
+
+        } else if (cupom.equals("Fiap30")) {
+             valorCupom = preco- 30/100*preco;
+        }
+        return valorCupom;
+    }
+//--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
     public int getId() {
         return id;
     }

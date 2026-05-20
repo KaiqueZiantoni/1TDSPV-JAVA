@@ -9,6 +9,13 @@ public class Eletronico extends Produto{
     public Eletronico(int id, double preco, String nome) {
         super(id, preco, nome);
     }
+//---------------------------------------------------------------------------------------
+
+    public Eletronico(String nome, double preco, boolean garantia){
+        super(nome, preco);
+        this.garantia = garantia;
+
+    }
 
     public boolean isGarantia() {
         return garantia;

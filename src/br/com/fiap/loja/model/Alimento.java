@@ -5,8 +5,15 @@ public class Alimento extends Produto{
     private boolean perecivel;
 
 
+
     public Alimento(int id, double preco, String nome) {
         super(id, preco, nome);
+    }
+
+    public Alimento(String nome, Double preco, boolean perecivel){
+        super(nome, preco);
+        this.perecivel = perecivel;
+
     }
 
 
